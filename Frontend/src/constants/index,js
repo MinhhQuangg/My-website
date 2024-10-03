@@ -1,0 +1,34 @@
+import { email, github, linkedin, resume } from "../assets";
+
+export const sections = [
+  { id: "About", title: "About" },
+  { id: "Experience", title: "Experience" },
+  { id: "Project", title: "Project" },
+  { id: "Contact", title: "Contact" },
+];
+
+export const technologies = [
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "JavaScript" },
+  { name: "Python" },
+  { name: "C++" },
+  { name: "Java" },
+  { name: "React JS" },
+  { name: "Redux Toolkit" },
+  { name: "Node.JS" },
+  { name: "Tailwind CSS" },
+  { name: "Material UI" },
+  { name: "MongoDB" },
+  { name: "git" },
+];
+
+export const experiences = [];
+export const projects = [];
+
+export const contacts = [
+  { name: "github", icon: github },
+  { name: "linkedin", icon: linkedin },
+  { name: "email", icon: email },
+  { name: "resume", icon: resume },
+];
