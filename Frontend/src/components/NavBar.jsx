@@ -1,5 +1,5 @@
 import { styles } from "../styles";
-import { sections } from "../constants/index,js";
+import { sections } from "../constants/index.js";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { menu, close } from "../assets";
@@ -39,6 +39,7 @@ export const NavBar = () => {
           <img
             src={toggle ? close : menu}
             onClick={() => setToggle(!toggle)}
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
             alt="menu"
           />
           <div

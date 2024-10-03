@@ -27,8 +27,12 @@ export const experiences = [];
 export const projects = [];
 
 export const contacts = [
-  { name: "github", icon: github },
-  { name: "linkedin", icon: linkedin },
-  { name: "email", icon: email },
-  { name: "resume", icon: resume },
+  { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    to: "https://www.linkedin.com/in/minh-quang-lieu-563627223/",
+  },
+  { name: "Email", icon: email, to: "mailto:minhquang030120@gmail.com" },
+  { name: "Resume", icon: resume, to: "1234" },
 ];

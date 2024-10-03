@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { About } from "./components/About";
-import { Tech } from "./components/Tech";
+import { Tool } from "./components/Tool";
 import { Experience } from "./components/Experience";
 import { Project } from "./components/Project";
 import { Footer } from "./components/Footer";
@@ -14,7 +14,7 @@ function App() {
           <NavBar />
         </div>
         <About />
-        <Tech />
+        <Tool />
         <Experience />
         <Project />
         <Footer />
