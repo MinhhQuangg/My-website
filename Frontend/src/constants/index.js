@@ -1,4 +1,22 @@
-import { email, github, linkedin, resume } from "../assets";
+import {
+  c,
+  css,
+  email,
+  git,
+  github,
+  html,
+  js,
+  linkedin,
+  mongodb,
+  mui,
+  nodejs,
+  python,
+  reactjs,
+  redux,
+  resume,
+  sql,
+  tailwindcss,
+} from "../assets";
 
 export const sections = [
   { id: "About", title: "About" },
@@ -8,19 +26,19 @@ export const sections = [
 ];
 
 export const technologies = [
-  { name: "HTML" },
-  { name: "CSS" },
-  { name: "JavaScript" },
-  { name: "Python" },
-  { name: "C++" },
-  { name: "Java" },
-  { name: "React JS" },
-  { name: "Redux Toolkit" },
-  { name: "Node.JS" },
-  { name: "Tailwind CSS" },
-  { name: "Material UI" },
-  { name: "MongoDB" },
-  { name: "git" },
+  { name: "HTML", icon: html },
+  { name: "CSS", icon: css },
+  { name: "JavaScript", icon: js },
+  { name: "Python", icon: python },
+  { name: "C++", icon: c },
+  { name: "SQL", icon: sql },
+  { name: "React JS", icon: reactjs },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "Node.JS", icon: nodejs },
+  { name: "Tailwind CSS", icon: tailwindcss },
+  { name: "Material UI", icon: mui },
+  { name: "MongoDB", icon: mongodb },
+  { name: "git", icon: git },
 ];
 
 export const experiences = [];
