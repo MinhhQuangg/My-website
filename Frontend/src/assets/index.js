@@ -17,6 +17,7 @@ import nodejs from "./tech/nodejs.png";
 import redux from "./tech/redux.png";
 import sql from "./tech/sql.png";
 import tailwindcss from "./tech/tailwindcss.png";
+import UH from "./experience/UH.png";
 export {
   menu,
   nodejs,
@@ -37,4 +38,5 @@ export {
   redux,
   sql,
   tailwindcss,
+  UH,
 };

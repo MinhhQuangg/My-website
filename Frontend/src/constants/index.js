@@ -16,6 +16,7 @@ import {
   resume,
   sql,
   tailwindcss,
+  UH,
 } from "../assets";
 
 export const sections = [
@@ -38,10 +39,9 @@ export const technologies = [
   { name: "Tailwind CSS", icon: tailwindcss },
   { name: "Material UI", icon: mui },
   { name: "MongoDB", icon: mongodb },
-  { name: "git", icon: git },
+  { name: "Git", icon: git },
 ];
 
-export const experiences = [];
 export const projects = [];
 
 export const contacts = [
@@ -53,4 +53,20 @@ export const contacts = [
   },
   { name: "Email", icon: email, to: "mailto:minhquang030120@gmail.com" },
   { name: "Resume", icon: resume, to: "1234" },
+];
+
+export const experiences = [
+  {
+    title: "Undergraduate Student",
+    company: "University of Houston - Main Campus",
+    borderTop: "red",
+    icon: UH,
+    iconBg: "white",
+    date: "August 2019 - May 2023",
+    descriptions: [
+      "A full-time student major in Biochemistry and minor in Mathematics.",
+      "Graduated in May-2023 with GPA of 3.73 and Cum Lauda honors.",
+      "Active member for various organizations such as Alpha Epsilon Delta, Cougar CS, and Code Coogs.",
+    ],
+  },
 ];
