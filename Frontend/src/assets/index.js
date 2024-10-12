@@ -18,6 +18,9 @@ import redux from "./tech/redux.png";
 import sql from "./tech/sql.png";
 import tailwindcss from "./tech/tailwindcss.png";
 import UH from "./experience/UH.png";
+import Unit from "./experience/Unit.png";
+import Knack from "./experience/Knack.png";
+
 export {
   menu,
   nodejs,
@@ -39,4 +42,6 @@ export {
   sql,
   tailwindcss,
   UH,
+  Unit,
+  Knack,
 };

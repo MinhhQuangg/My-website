@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience, key }) => (
     }
     iconStyle={{
       background: experience.iconBg,
-      border: "2px solid red",
+      border: "2px solid black",
       justifyItems: "center",
     }}
     icon={
