@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { contacts } from "../constants/index.js";
 import { styles } from "../styles";
+import { logo } from "../assets/index.js";
 
 export const Footer = () => {
   const handleContactClick = (e, link) => {
@@ -11,7 +12,14 @@ export const Footer = () => {
   return (
     <div className={`${styles.paddingX} w-full text-white bg-primary py-5`}>
       <div className="text-center items-center justify-center justify-between md:flex">
-        <div>Logo</div>
+        <div>
+          <img
+            src={logo}
+            alt="logo"
+            className="w-12 h-12 object-contain cursor-pointer"
+            onClick={() => window.scrollTo(0, 0)}
+          />
+        </div>
 
         <div className="text-secondary flex flex-wrap justify-center md:justify-between gap-3 py-1">
           {contacts.map((contact, index) => (

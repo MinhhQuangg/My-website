@@ -1,4 +1,5 @@
 import menu from "./menu.svg";
+import logo from "./logo.png";
 import close from "./close.svg";
 import github from "./github.png";
 import demo from "./demo.png";
@@ -32,7 +33,7 @@ import natour from "./project/natour.gif";
 import uniqueness from "./project/uniqueness.gif";
 
 export {
-  pug,
+  logo,
   demo,
   menu,
   nodejs,
@@ -45,6 +46,7 @@ export {
   css,
   git,
   html,
+  pug,
   js,
   mongodb,
   mui,

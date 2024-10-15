@@ -24,21 +24,22 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
-
-        <div className="flex flex-col justify-between">
-          <div className="mt-5">
-            <h3 className=" font-bold text-[24px]">{name}</h3>
-            <p className="mt-2  text-[16px]">{description}</p>
+        <div className="flex flex-col justify-between h-[40%]">
+          <div className="flex flex-col justify-between">
+            <div className="mt-5">
+              <h3 className=" font-bold text-[24px]">{name}</h3>
+              <p className="mt-2  text-[16px]">{description}</p>
+            </div>
           </div>
           <div className="mt-4 flex justify-between w-full">
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               {tags.map((tag, index) => (
                 <div key={index} className="flex">
                   <img src={tag} alt={tag} className="h-8 w-8" />
                 </div>
               ))}
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               {demo_link && (
                 <img
                   src={demo}

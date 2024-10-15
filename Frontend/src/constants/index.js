@@ -28,7 +28,6 @@ import {
   mywebsite,
   uniqueness,
   pug,
-  demo,
 } from "../assets";
 
 export const sections = [
