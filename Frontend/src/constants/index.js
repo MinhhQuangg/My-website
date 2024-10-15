@@ -54,13 +54,22 @@ export const technologies = [
   { name: "Pug", icon: pug },
 ];
 
-export const contacts = [
-  { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
+export const introIcon = [
   {
     name: "LinkedIn",
     icon: linkedin,
     to: "https://www.linkedin.com/in/minh-quang-lieu-563627223/",
   },
+  { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
+];
+
+export const contacts = [
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    to: "https://www.linkedin.com/in/minh-quang-lieu-563627223/",
+  },
+  { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
   { name: "Email", icon: email, to: "mailto:minhquang030120@gmail.com" },
   { name: "Resume", icon: resume, to: "1234" },
 ];

@@ -15,6 +15,21 @@ export const textVariant = (delay) => {
     },
   };
 };
+export const showUp = () => {
+  return {
+    hidden: {
+      y: 0,
+      opacity: 0,
+    },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+      },
+    },
+  };
+};
 
 export const fadeIn = (direction, type, delay, duration) => {
   return {
