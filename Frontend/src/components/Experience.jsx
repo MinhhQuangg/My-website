@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
@@ -13,6 +13,10 @@ import { experiences } from "../constants";
 import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
+  const [moreButton, setMoreButton] = useState(true);
+  const handleClick = () => {
+    setMoreButton(!moreButton);
+  };
   return (
     <>
       <motion.div variants={textVariant()} className="text-center">
@@ -23,10 +27,26 @@ const Experience = () => {
       </motion.div>
       <div className="mt-5 flex flex-col">
         <VerticalTimeline lineColor="black">
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
+          {experiences.map((experience, index) =>
+            moreButton ? (
+              index < 4 && (
+                <ExperienceCard key={index} experience={experience} />
+              )
+            ) : (
+              <ExperienceCard key={index} experience={experience} />
+            )
+          )}
         </VerticalTimeline>
+      </div>
+      <div
+        className={`${styles.sectionSubText} text-center mt-3 text-black-200 hover:text-black`}
+      >
+        <button
+          className="rounded-full border-2 border-black px-3 "
+          onClick={handleClick}
+        >
+          {moreButton ? "More" : "Less"}
+        </button>
       </div>
     </>
   );

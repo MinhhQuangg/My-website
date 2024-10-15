@@ -14,18 +14,27 @@ import {
   reactjs,
   redux,
   resume,
+  vite,
   sql,
   tailwindcss,
   UH,
   Knack,
   Unit,
+  MH,
+  pet,
+  food,
+  library,
+  natour,
+  mywebsite,
+  uniqueness,
+  pug,
+  demo,
 } from "../assets";
 
 export const sections = [
   { id: "About", title: "About" },
   { id: "Experience", title: "Experience" },
   { id: "Project", title: "Project" },
-  { id: "Contact", title: "Contact" },
 ];
 
 export const technologies = [
@@ -42,9 +51,9 @@ export const technologies = [
   { name: "Material UI", icon: mui },
   { name: "MongoDB", icon: mongodb },
   { name: "Git", icon: git },
+  { name: "Vite.js", icon: vite },
+  { name: "Pug", icon: pug },
 ];
-
-export const projects = [];
 
 export const contacts = [
   { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
@@ -65,7 +74,7 @@ export const experiences = [
     borderTop: "red",
     icon: UH,
     iconBg: "white",
-    date: "August 2024 - Recent",
+    date: "January 2024 - Recent",
     descriptions: [
       "Use the tokenize library to analyze the code patterns and structures across about + 2000 programming projects and examine their uniqueness based on the percentage of syntactic redundancy.",
       "Apply the outcomes of syntactic redundancy to generate the list of code snippets for usage.",
@@ -86,9 +95,9 @@ export const experiences = [
     ],
   },
   {
-    title: "Research Assistant - Research Mentor ",
+    title: "Research Assistant",
     company:
-      "The Uniqueness of Source Code - Software Engineer Research, University of Houston",
+      "Real-Time Systems Research - Machine Learning Research, University of Houston",
     borderTop: "red",
     icon: UH,
     iconBg: "white",
@@ -99,7 +108,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Academic tutor ",
+    title: "Academic Tutor",
     company: "Knack: College Tutoring",
     borderTop: "orange",
     icon: Knack,
@@ -109,5 +118,95 @@ export const experiences = [
       "Assist students’ performance in science, computer science, and mathematics courses.",
       "Utilize various learning styles with simplify complex topics for ensuring the understanding of concepts and principles",
     ],
+  },
+  {
+    title: "Research Assistant - Research Mentor",
+    company: "The Fujita Lab - Biochemistry Research, University of Houston",
+    borderTop: "red",
+    icon: UH,
+    iconBg: "white",
+    date: "August 2021 - May 2023",
+    descriptions: [
+      "Supervised new assistants by providing laboratory techniques and overseeing their performance.",
+      "Investigated the biological and genetic aspects of Bacillus subtillis spore and biofilm formation by decoupling feedback regulation controlling gene networks and dissecting the gene networks into individual modules",
+    ],
+  },
+  {
+    title: "Front Desk",
+    company: "Memorial Hermann Cypress Hospital",
+    borderTop: "darkblue",
+    icon: MH,
+    iconBg: "white",
+    date: "May 2021 - May 2022",
+    descriptions: [
+      "Assist with patient check-ins and guide them to the appropriate department.",
+      "Facilitate patient discharges by providing room numbers and clear directions for a smooth transition.",
+    ],
+  },
+  {
+    title: "Academic Tutor",
+    company:
+      "Center for Academic Support and Assessment, University of Houston",
+    borderTop: "red",
+    icon: UH,
+    iconBg: "white",
+    date: "January 2021 - May 2021",
+    descriptions: [
+      "Dedicated tutor specializing in Calculus, Linear Algebra, and Statistics, committed to improving student understanding and confidence.",
+      "Flexible math tutor offering both in-person and online sessions to accommodate diverse learning needs and schedules",
+    ],
+  },
+];
+
+export const projects = [
+  {
+    name: "Omnifood",
+    description:
+      "Food Introduciton Template - Meal Plan Lists and Recipe Collections ",
+    gif: food,
+    tags: [html, css],
+    web_link: "#",
+    demo_link: "https://omnifood-fawn-mu.vercel.app/#",
+    src_link: "https://github.com/MinhhQuangg/Omnifood",
+  },
+  {
+    name: "Pet HomeKeeper",
+    description:
+      "Virtual Tamagotchi - Pet Customization and Social Interaction ",
+    gif: pet,
+    tags: [c],
+
+    src_link: "https://github.com/MinhhQuangg/Pet-HomeKeeper",
+  },
+  {
+    name: "Source Code Uniqueness",
+    description:
+      "Source Code - Code Pattern Analysis and Syntactic Redundancy Measurement",
+    gif: uniqueness,
+    tags: [python],
+
+    src_link: "https://github.com/MinhhQuangg/Uniqueness-of-source-code",
+  },
+  {
+    name: "Natour",
+    description: "Tour Booking Sytem - Tour Lists and Guide Profiles",
+    gif: natour,
+    tags: [nodejs, mongodb, pug],
+
+    src_link: "https://github.com/MinhhQuangg/Backend-Natours",
+  },
+  {
+    name: "Open Library",
+    description: "Library Platform - Book Catalog and Borrowing System",
+    gif: library,
+    tags: [nodejs, mongodb, reactjs, mui],
+    src_link: "https://github.com/",
+  },
+  {
+    name: "Minh Quang Lieu",
+    description: "This Portfolio \n",
+    gif: mywebsite,
+    tags: [vite, tailwindcss],
+    src_link: "https://github.com/MinhhQuangg/My-website",
   },
 ];

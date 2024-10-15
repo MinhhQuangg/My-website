@@ -1,7 +1,7 @@
 import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-const ExperienceCard = ({ experience, key }) => (
+const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
       background: "#ffffff",

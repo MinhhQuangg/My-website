@@ -1,6 +1,7 @@
 import menu from "./menu.svg";
 import close from "./close.svg";
 import github from "./github.png";
+import demo from "./demo.png";
 import email from "./email.png";
 import linkedin from "./linkedin.png";
 import resume from "./resume.png";
@@ -14,14 +15,25 @@ import mui from "./tech/mui.png";
 import python from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import nodejs from "./tech/nodejs.png";
+import vite from "./tech/vite.png";
 import redux from "./tech/redux.png";
 import sql from "./tech/sql.png";
+import pug from "./tech/pugjs.png";
 import tailwindcss from "./tech/tailwindcss.png";
 import UH from "./experience/UH.png";
 import Unit from "./experience/Unit.png";
 import Knack from "./experience/Knack.png";
+import MH from "./experience/MemorialHermann.png";
+import pet from "./project/pet.gif";
+import food from "./project/food.gif";
+import library from "./project/library.gif";
+import mywebsite from "./project/mywebsite.gif";
+import natour from "./project/natour.gif";
+import uniqueness from "./project/uniqueness.gif";
 
 export {
+  pug,
+  demo,
   menu,
   nodejs,
   close,
@@ -44,4 +56,12 @@ export {
   UH,
   Unit,
   Knack,
+  MH,
+  pet,
+  food,
+  library,
+  natour,
+  mywebsite,
+  vite,
+  uniqueness,
 };
