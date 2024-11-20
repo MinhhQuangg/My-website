@@ -200,7 +200,8 @@ export const projects = [
     description: "Tour Booking Sytem - Tour Lists and Guide Profiles",
     gif: natour,
     tags: [nodejs, mongodb, pug],
-
+    demo_link:
+      "https://natours-app-minhhquangg-minhhquanggs-projects.vercel.app/",
     src_link: "https://github.com/MinhhQuangg/Backend-Natours",
   },
   {
