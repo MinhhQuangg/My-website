@@ -28,6 +28,8 @@ import {
   mywebsite,
   uniqueness,
   pug,
+  GT,
+  BY,
 } from "../assets";
 
 export const sections = [
@@ -76,13 +78,26 @@ export const contacts = [
 
 export const experiences = [
   {
+    title: "Graduate Student",
+    company:
+      "Georgia Institute of Technology - Master of Science in Computer Science",
+    borderTop: "Yellow",
+    icon: GT,
+    iconBg: "white",
+    date: "August 2024 - Recent",
+    descriptions: [
+      "Completed courses in Database System Concepts and Design, as well as Introduction to Information Security.",
+      "Maintained a 4.0/4.0 GPA with a specialization in Computing Systems.",
+    ],
+  },
+  {
     title: "Research Assistant - Research Mentor ",
     company:
       "The Uniqueness of Source Code - Software Engineer Research, University of Houston",
     borderTop: "red",
     icon: UH,
     iconBg: "white",
-    date: "January 2024 - Recent",
+    date: "January 2024 - September 2024",
     descriptions: [
       "Use the tokenize library to analyze the code patterns and structures across about + 2000 programming projects and examine their uniqueness based on the percentage of syntactic redundancy.",
       "Apply the outcomes of syntactic redundancy to generate the list of code snippets for usage.",
@@ -96,10 +111,11 @@ export const experiences = [
     iconBg: "white",
     date: "May 2024 - August 2024",
     descriptions: [
-      "Collaborated with a team of six interns to build a responsive virtual library website.",
+      "Collaborated with a team of six interns to develop a virtual library website.",
       "Implemented Axios.js to fetch book information and store user data, facilitating tracking of borrowing history and book transactions.",
-      "Utilized Redux and Redux Toolkit to manage application state including user information, borrowed books, and transaction history across the app.",
-      "Leveraged Material UI to construct the website interface, enhancing the interaction and ensuring the user experience.",
+      "Utilized Redux to manage application state, including user information, borrowed books, and transaction history across the app, resulting in a 40% increase in app responsiveness.",
+      "Designed AWS-based data storage solution to reduce application latency by 60% and improve 70% data retrieval.",
+      "Leveraged Material UI to construct the website interface, enhancing the interaction and ensuring responsive viewport.",
     ],
   },
   {
@@ -125,6 +141,18 @@ export const experiences = [
     descriptions: [
       "Assist students’ performance in science, computer science, and mathematics courses.",
       "Utilize various learning styles with simplify complex topics for ensuring the understanding of concepts and principles",
+    ],
+  },
+  {
+    title: "Undergraduate Student",
+    company: "University of Houston Main Campus",
+    borderTop: "red",
+    icon: UH,
+    iconBg: "white",
+    date: "August 2019 - May 2023",
+    descriptions: [
+      "Graduated with a Bachelor's degree in Biochemistry, along with a minor in Mathematics, and earned Magna Cum Laude honors.",
+      "Awarded the Excellent Academic Scholarship and was in the Dean's List every year",
     ],
   },
   {
@@ -162,6 +190,18 @@ export const experiences = [
     descriptions: [
       "Dedicated tutor specializing in Calculus, Linear Algebra, and Statistics, committed to improving student understanding and confidence.",
       "Flexible math tutor offering both in-person and online sessions to accommodate diverse learning needs and schedules",
+    ],
+  },
+  {
+    title: "Undergraduate Student",
+    company: "University of Houston Main Campus",
+    borderTop: "red",
+    icon: UH,
+    iconBg: "white",
+    date: "August 2019",
+    descriptions: [
+      "Pursued a Biochemistry major as an undergraduate at the University of Houston.",
+      "Full-time student awarded the Academic Excellence Scholarship.",
     ],
   },
 ];
@@ -210,6 +250,14 @@ export const projects = [
     gif: library,
     tags: [nodejs, mongodb, reactjs, mui],
     src_link: "https://github.com/",
+  },
+  {
+    name: "Beyond Journey",
+    description:
+      "Real-word booking platform - tour based on my personal road trip experience ",
+    gif: BY,
+    tags: [nodejs, mongodb, reactjs, tailwindcss],
+    src_link: "https://github.com/MinhhQuangg/Beyond-Journey/",
   },
   {
     name: "Minh Quang Lieu",

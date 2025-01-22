@@ -31,6 +31,8 @@ import library from "./project/library.gif";
 import mywebsite from "./project/mywebsite.gif";
 import natour from "./project/natour.gif";
 import uniqueness from "./project/uniqueness.gif";
+import GT from "./experience/GT.png";
+import BY from "./project/beyondjourney.gif";
 
 export {
   logo,
@@ -66,4 +68,6 @@ export {
   mywebsite,
   vite,
   uniqueness,
+  GT,
+  BY,
 };
