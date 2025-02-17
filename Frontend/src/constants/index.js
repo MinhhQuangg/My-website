@@ -270,6 +270,7 @@ export const projects = [
     description: "This Portfolio \n",
     gif: mywebsite,
     tags: [vite, tailwindcss],
+    demo_link: "https://minhquanglieu.com/",
     src_link: "https://github.com/MinhhQuangg/My-website",
   },
 ];
