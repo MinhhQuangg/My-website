@@ -39,20 +39,20 @@ export const sections = [
 ];
 
 export const technologies = [
+  { name: "Python", icon: python },
+  { name: "React", icon: reactjs },
+  { name: "JavaScript", icon: js },
+  { name: "Node.js", icon: nodejs },
+  { name: "Vite.js", icon: vite },
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
-  { name: "JavaScript", icon: js },
-  { name: "Python", icon: python },
   { name: "C++", icon: c },
   { name: "SQL", icon: sql },
-  { name: "React JS", icon: reactjs },
   { name: "Redux Toolkit", icon: redux },
-  { name: "Node.JS", icon: nodejs },
   { name: "Tailwind CSS", icon: tailwindcss },
   { name: "Material UI", icon: mui },
   { name: "MongoDB", icon: mongodb },
   { name: "Git", icon: git },
-  { name: "Vite.js", icon: vite },
   { name: "Pug", icon: pug },
 ];
 
@@ -62,6 +62,7 @@ export const introIcon = [
     icon: linkedin,
     to: "https://www.linkedin.com/in/minh-quang-lieu-563627223/",
   },
+  { name: "Resume", icon: resume, to: "/Resume.pdf" },
   { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
 ];
 
@@ -73,7 +74,7 @@ export const contacts = [
   },
   { name: "GitHub", icon: github, to: "https://github.com/MinhhQuangg" },
   { name: "Email", icon: email, to: "mailto:minhquang030120@gmail.com" },
-  { name: "Resume", icon: resume, to: "1234" },
+  { name: "Resume", icon: resume, to: "/Resume.pdf" },
 ];
 
 export const experiences = [
@@ -99,9 +100,11 @@ export const experiences = [
     iconBg: "white",
     date: "January 2024 - September 2024",
     descriptions: [
-      "Use the tokenize library to analyze the code patterns and structures across about + 2000 programming projects and examine their uniqueness based on the percentage of syntactic redundancy.",
+      "Worked in a group of two under the supervision of Dr. Amin Alipour and PhD student Aftab Hussain",
+      "Use the tokenize library to analyze the code patterns and structures across more than 1,000 public Github projects and examine their uniqueness based on the percentage of syntactic redundancy.",
       "Apply the outcomes of syntactic redundancy to generate the list of code snippets for usage.",
     ],
+    tags: [python],
   },
   {
     title: "Frontend Developer Internship",
@@ -114,9 +117,10 @@ export const experiences = [
       "Collaborated with a team of six interns to develop a virtual library website.",
       "Implemented Axios.js to fetch book information and store user data, facilitating tracking of borrowing history and book transactions.",
       "Utilized Redux to manage application state, including user information, borrowed books, and transaction history across the app, resulting in a 40% increase in app responsiveness.",
-      "Designed AWS-based data storage solution to reduce application latency by 60% and improve 70% data retrieval.",
+      "Designed AWS-based data storage solution to reduce application latency by 30% and improve 50% data retrieval.",
       "Leveraged Material UI to construct the website interface, enhancing the interaction and ensuring responsive viewport.",
     ],
+    tags: [reactjs, js, css, redux, html, mui],
   },
   {
     title: "Research Assistant",
@@ -127,9 +131,11 @@ export const experiences = [
     iconBg: "white",
     date: "August 2023 - December 2023",
     descriptions: [
+      "Worked in a group of two under the supervision of Dr. Albert Chang and PhD student Thomas Carroll",
       "Employed the Traci Sumo library to control the vehicles and explored the dynamic user equilibrium to determine the most optimal route for avoiding traffic congestion during peak hours.",
-      "Simulated virtual vehicles to optimize routes reduce over 50% of expected time and prevent traffic congestion.",
+      "Simulated virtual vehicles to optimize routes reduce over 20% of expected time and prevent traffic congestion.",
     ],
+    tags: [python],
   },
   {
     title: "Academic Tutor",
@@ -249,7 +255,7 @@ export const projects = [
     description: "Library Platform - Book Catalog and Borrowing System",
     gif: library,
     tags: [nodejs, mongodb, reactjs, mui],
-    src_link: "https://github.com/",
+    src_link: "https://github.com/MinhhQuangg/Open-Library",
   },
   {
     name: "Beyond Journey",

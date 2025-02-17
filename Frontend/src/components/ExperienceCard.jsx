@@ -44,6 +44,13 @@ const ExperienceCard = ({ experience }) => (
         </li>
       ))}
     </ul>
+    {experience.tags && (
+      <div className="flex gap-4 mt-2 ml-5">
+        {experience.tags.map((tag, index) => (
+          <img key={index} src={tag} alt={tag} className="h-8 w-8" />
+        ))}
+      </div>
+    )}
   </VerticalTimelineElement>
 );
 

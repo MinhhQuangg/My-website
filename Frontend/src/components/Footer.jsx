@@ -34,9 +34,7 @@ export const Footer = () => {
           ))}
         </div>
 
-        <div className="text-secondary text-[14px]">
-          © 2024 Minh Quang. All Rights Reserved.
-        </div>
+        <div className="text-secondary text-[14px]">© 2025 Minh Quang</div>
       </div>
     </div>
   );

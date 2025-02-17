@@ -12,7 +12,7 @@ const Intro = () => {
   return (
     <div className="mt-20">
       <div className={`${styles.headerText}`}>
-        Hey, <br />
+        Hello, <br />
         I'm Quang
       </div>
       <div className={`${styles.headerSubText} mt-5`}>
