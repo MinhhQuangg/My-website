@@ -13,7 +13,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.25)}>
-      <div className="p-5 rounded-2xl h-[100%] sm:w-[360px] border-solid border-2">
+      <div className="p-5 rounded-2xl h-[100%] md:w-[360px] sm:w-[500px] xs:w-[400px] border-solid border-2">
         <div className="relative w-full h-[200px]">
           <img
             src={gif}

@@ -12,7 +12,7 @@ const Project = () => {
         <p className={styles.sectionSubText}>What I have built</p>
         <h2 className={styles.sectionHeadText}>My Projects</h2>
       </motion.div>
-      <div className="mt-10 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} index={index} />
         ))}

@@ -39,9 +39,11 @@ const ExperienceCard = ({ experience }) => (
     </div>
     <ul className="mt-2 list-disc ml-5 space-y-2">
       {experience.descriptions.map((description, index) => (
-        <li key={index} className="text-[15px] ">
-          {description}
-        </li>
+        <li
+          key={index}
+          className="text-[15px]"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       ))}
     </ul>
     {experience.tags && (

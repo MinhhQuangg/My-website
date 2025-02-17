@@ -88,7 +88,7 @@ export const experiences = [
     date: "August 2024 - Recent",
     descriptions: [
       "Completed courses in Database System Concepts and Design, as well as Introduction to Information Security.",
-      "Maintained a 4.0/4.0 GPA with a specialization in Computing Systems.",
+      "Maintained a <b>4.0 GPA</b> with a specialization in Computing Systems.",
     ],
   },
   {
@@ -101,7 +101,7 @@ export const experiences = [
     date: "January 2024 - September 2024",
     descriptions: [
       "Worked in a group of two under the supervision of Dr. Amin Alipour and PhD student Aftab Hussain",
-      "Use the tokenize library to analyze the code patterns and structures across more than 1,000 public Github projects and examine their uniqueness based on the percentage of syntactic redundancy.",
+      "Use the tokenize library to analyze the code patterns and structures across more than <b>1,000 public Github projects</b> and examine their uniqueness based on the percentage of syntactic redundancy.",
       "Apply the outcomes of syntactic redundancy to generate the list of code snippets for usage.",
     ],
     tags: [python],
@@ -114,10 +114,10 @@ export const experiences = [
     iconBg: "white",
     date: "May 2024 - August 2024",
     descriptions: [
-      "Collaborated with a team of six interns to develop a virtual library website.",
+      "Collaborated with six interns to develop a virtual library website featuring <b>2000</b> online books.",
       "Implemented Axios.js to fetch book information and store user data, facilitating tracking of borrowing history and book transactions.",
-      "Utilized Redux to manage application state, including user information, borrowed books, and transaction history across the app, resulting in a 40% increase in app responsiveness.",
-      "Designed AWS-based data storage solution to reduce application latency by 30% and improve 50% data retrieval.",
+      "Utilized Redux to manage application state, including user information, borrowed books, and transaction history across the app, resulting in a <b>40%</b> increase in app responsiveness.",
+      "Designed AWS-based data storage solution to reduce application latency by <b>30%</b> and improve <b>50%</b> data retrieval.",
       "Leveraged Material UI to construct the website interface, enhancing the interaction and ensuring responsive viewport.",
     ],
     tags: [reactjs, js, css, redux, html, mui],
@@ -133,7 +133,7 @@ export const experiences = [
     descriptions: [
       "Worked in a group of two under the supervision of Dr. Albert Chang and PhD student Thomas Carroll",
       "Employed the Traci Sumo library to control the vehicles and explored the dynamic user equilibrium to determine the most optimal route for avoiding traffic congestion during peak hours.",
-      "Simulated virtual vehicles to optimize routes reduce over 20% of expected time and prevent traffic congestion.",
+      "Simulated virtual vehicles to optimize routes reduce <b>over 20%</b> of expected time and prevent traffic congestion.",
     ],
     tags: [python],
   },
