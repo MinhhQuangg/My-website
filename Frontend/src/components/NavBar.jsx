@@ -3,11 +3,16 @@ import { sections } from "../constants/index.js";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { menu, close, logo } from "../assets";
+import { useTranslation } from "react-i18next";
 
 export const NavBar = () => {
+  const { i18n, t } = useTranslation();
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [languageDropDown, setLanguageDropDown] = useState(false);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <div
       className={`${styles.paddingX} bg-primary w-full py-3 z-10 fixed top-0`}
@@ -33,7 +38,7 @@ export const NavBar = () => {
               } hover:text-white text-[18px] font-bold cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{t(`nav:${link.title}`)}</a>
             </li>
           ))}
           <li
@@ -41,15 +46,21 @@ export const NavBar = () => {
             onMouseEnter={() => setLanguageDropDown(true)}
             onMouseLeave={() => setLanguageDropDown(false)}
           >
-            Language
+            {t("nav:Language")}
             {languageDropDown && (
               <div className="absolute top-full bg-primary p-2 rounded-xl shadow-lg">
                 <ul className="list-none">
-                  <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
-                    English
+                  <li
+                    className="text-secondary hover:text-white cursor-pointer text-[14px] py-1"
+                    onClick={() => changeLanguage("en")}
+                  >
+                    {t("nav:English")}
                   </li>
-                  <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
-                    Vietnamese
+                  <li
+                    className="text-secondary hover:text-white cursor-pointer text-[14px] py-1"
+                    onClick={() => changeLanguage("vi")}
+                  >
+                    {t("nav:Vietnamese")}
                   </li>
                 </ul>
               </div>
@@ -80,7 +91,7 @@ export const NavBar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${link.id}`}>{t(`nav:${link.title}`)}</a>
                 </li>
               ))}
               <li
@@ -90,15 +101,21 @@ export const NavBar = () => {
                 onMouseEnter={() => setLanguageDropDown(true)}
                 onMouseLeave={() => setLanguageDropDown(false)}
               >
-                Language
+                {t("nav:Language")}
                 {languageDropDown && (
-                  <div className="absolute top-full bg-primary p-2 rounded-xl shadow-lg">
+                  <div className="absolute top-full left-0 bg-primary p-2 rounded-xl shadow-lg">
                     <ul className="list-none">
-                      <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
-                        English
+                      <li
+                        className="text-secondary hover:text-white cursor-pointer text-[15px] p-1 whitespace-nowrap"
+                        onClick={() => changeLanguage("en")}
+                      >
+                        {t("nav:English")}
                       </li>
-                      <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
-                        Vietnamese
+                      <li
+                        className="text-secondary hover:text-white cursor-pointer text-[15px] p-1 whitespace-nowrap"
+                        onClick={() => changeLanguage("vi")}
+                      >
+                        {t("nav:Vietnamese")}
                       </li>
                     </ul>
                   </div>
