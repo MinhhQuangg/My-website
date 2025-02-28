@@ -7,6 +7,7 @@ import { menu, close, logo } from "../assets";
 export const NavBar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [languageDropDown, setLanguageDropDown] = useState(false);
   return (
     <div
       className={`${styles.paddingX} bg-primary w-full py-3 z-10 fixed top-0`}
@@ -23,7 +24,7 @@ export const NavBar = () => {
           <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex"></p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-8">
           {sections.map((link) => (
             <li
               key={link.id}
@@ -35,6 +36,25 @@ export const NavBar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li
+            className={`relative text-secondary hover:text-white text-[18px] font-bold cursor-pointer`}
+            onMouseEnter={() => setLanguageDropDown(true)}
+            onMouseLeave={() => setLanguageDropDown(false)}
+          >
+            Language
+            {languageDropDown && (
+              <div className="absolute top-full bg-primary p-2 rounded-xl shadow-lg">
+                <ul className="list-none">
+                  <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
+                    English
+                  </li>
+                  <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
+                    Vietnamese
+                  </li>
+                </ul>
+              </div>
+            )}
+          </li>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -63,6 +83,27 @@ export const NavBar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <li
+                className={`relative text-secondary hover:text-white
+                 font-poppins font-medium cursor-pointer text-[16px]
+              }`}
+                onMouseEnter={() => setLanguageDropDown(true)}
+                onMouseLeave={() => setLanguageDropDown(false)}
+              >
+                Language
+                {languageDropDown && (
+                  <div className="absolute top-full bg-primary p-2 rounded-xl shadow-lg">
+                    <ul className="list-none">
+                      <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
+                        English
+                      </li>
+                      <li className="text-secondary hover:text-white cursor-pointer text-[14px] py-1">
+                        Vietnamese
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </li>
             </ul>
           </div>
         </div>
