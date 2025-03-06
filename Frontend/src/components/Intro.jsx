@@ -2,8 +2,10 @@ import React from "react";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { introIcon } from "../constants";
+import { useTranslation } from "react-i18next";
 
 const Intro = () => {
+  const { t } = useTranslation();
   const handleClick = (e, link) => {
     e.preventDefault();
     window.open(link);
@@ -12,12 +14,12 @@ const Intro = () => {
   return (
     <div className="mt-20">
       <div className={`${styles.headerText}`}>
-        Hello, <br />
-        I'm Quang
+        {t("intro:Hello")}, <br />
+        {t("intro:Iam")}
       </div>
       <div className={`${styles.headerSubText} mt-5`}>
-        I am a full-stack developer <br className="sm:block hidden" />
-        and a Master's student at the Georgia Institute of Technology.
+        {t("intro:full-stack")} <br className="sm:block hidden" />
+        {t("intro:Master-student")}
       </div>
       <div className="flex gap-5">
         {introIcon.map((contact) => (

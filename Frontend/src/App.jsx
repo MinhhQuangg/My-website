@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import Tool from "./components/Tool";
 import Intro from "./components/Intro";
 import About from "./components/About";
+import "./i18n/i18n";
 
 function App() {
   return (
