@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 import { technologies } from "../constants/index.js";
 import { useState } from "react";
 import { showUp, slideIn } from "../utils/motion.js";
+import { useTranslation } from "react-i18next";
 
 const Tool = () => {
   const [showTool, setShowTool] = useState(null);
+  const { t } = useTranslation("tool");
   return (
     <div>
       <motion.div variants={slideIn("left", 3)}>
-        <p className={styles.sectionSubText}>What I have used</p>
-        <h2 className={styles.sectionHeadText}>Tools</h2>
+        <p className={styles.sectionSubText}>{t("What")}</p>
+        <h2 className={styles.sectionHeadText}>{t("Tool")}</h2>
       </motion.div>
       <motion.div className="flex flex-wrap gap-5 md:gap-10 mt-10">
         {technologies.map((tech) => (
