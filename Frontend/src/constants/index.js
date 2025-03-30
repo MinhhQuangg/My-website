@@ -30,6 +30,7 @@ import {
   pug,
   GT,
   BY,
+  chat,
 } from "../assets";
 
 export const sections = [
@@ -266,10 +267,19 @@ export const projects = [
     src_link: "https://github.com/MinhhQuangg/Beyond-Journey/",
   },
   {
+    name: "ChatLas",
+    description:
+      "Chat Application - Real-time translation and messaging platform\n",
+    gif: chat,
+    tags: [reactjs, nodejs, sql, tailwindcss],
+    demo_link:
+      "https://devpost.com/software/chatlas?ref_content=user-portfolio&ref_feature=in_progress",
+  },
+  {
     name: "Minh Quang Lieu",
     description: "This Portfolio \n",
     gif: mywebsite,
-    tags: [vite, tailwindcss],
+    tags: [reactjs, tailwindcss],
     demo_link: "https://minhquanglieu.com/",
     src_link: "https://github.com/MinhhQuangg/My-website",
   },
