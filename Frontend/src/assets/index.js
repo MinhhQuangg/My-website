@@ -33,8 +33,10 @@ import natour from "./project/natour.gif";
 import uniqueness from "./project/uniqueness.gif";
 import GT from "./experience/GT.png";
 import BY from "./project/beyondjourney.gif";
+import chat from "./project/chat.gif";
 
 export {
+  chat,
   logo,
   demo,
   menu,
