@@ -34,8 +34,10 @@ import uniqueness from "./project/uniqueness.gif";
 import GT from "./experience/GT.png";
 import BY from "./project/beyondjourney.gif";
 import chat from "./project/chat.gif";
+import robot from "./project/robot.gif";
 
 export {
+  robot,
   chat,
   logo,
   demo,
