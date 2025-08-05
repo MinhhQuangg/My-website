@@ -17,6 +17,7 @@ import python from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import nodejs from "./tech/nodejs.png";
 import vite from "./tech/vite.png";
+import dynamodb from "./tech/dynamodb.png";
 import redux from "./tech/redux.png";
 import sql from "./tech/sql.png";
 import pug from "./tech/pugjs.png";
@@ -37,6 +38,7 @@ import chat from "./project/chat.gif";
 import robot from "./project/robot.gif";
 
 export {
+  dynamodb,
   robot,
   chat,
   logo,

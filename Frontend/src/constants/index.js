@@ -31,6 +31,8 @@ import {
   GT,
   BY,
   chat,
+  robot,
+  dynamodb,
 } from "../assets";
 
 export const sections = [
@@ -41,20 +43,21 @@ export const sections = [
 
 export const technologies = [
   { name: "Python", icon: python },
-  { name: "React", icon: reactjs },
   { name: "JavaScript", icon: js },
+  { name: "C++", icon: c },
+  { name: "React", icon: reactjs },
   { name: "Node.js", icon: nodejs },
   { name: "Vite.js", icon: vite },
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
-  { name: "C++", icon: c },
-  { name: "SQL", icon: sql },
-  { name: "Redux Toolkit", icon: redux },
   { name: "Tailwind CSS", icon: tailwindcss },
   { name: "Material UI", icon: mui },
+  { name: "SQL", icon: sql },
   { name: "MongoDB", icon: mongodb },
+  { name: "DynamoDB", icon: dynamodb },
   { name: "Git", icon: git },
   { name: "Pug", icon: pug },
+  { name: "Redux Toolkit", icon: redux },
 ];
 
 export const introIcon = [
@@ -274,6 +277,15 @@ export const projects = [
     tags: [reactjs, nodejs, sql, tailwindcss],
     demo_link:
       "https://devpost.com/software/chatlas?ref_content=user-portfolio&ref_feature=in_progress",
+  },
+  {
+    name: "Social Sim",
+    description:
+      "Simulator App - Helping neurodivergent students practicing conversations\n",
+    gif: robot,
+    tags: [vite, nodejs, dynamodb, tailwindcss],
+    demo_link:
+      "https://devpost.com/software/socialsim?ref_content=user-portfolio&ref_feature=in_progress",
   },
   {
     name: "Minh Quang Lieu",
